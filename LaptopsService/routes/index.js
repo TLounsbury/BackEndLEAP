@@ -20,31 +20,6 @@ router.get('/team', (request, response, next) => {
     response.setHeader('content-type', 'application/json');
     response.end(JSON.stringify(team.list()));
   } else {
-    let key = Object.keys(get_params)[0]; // get first parameter only
-    console.log("First key is: " + key);
-    let value = request.query[key];
-    console.log('params ' + value);
-    let result = team.query_by_arg(key, value);
-    if (result) {
-      response.setHeader('content-type', 'application/json');
-      response.end(JSON.stringify(result));
-    } else {
-      next(createError(404));
-    }
-  }
-});
-
-// example for using path variable
-router.get('/team/:lastName', (request, response, next) => {
-  const param = request.params.lastName;
-  console.log('got into team/:lastName ' + param);
-
-  const result = team.query_by_arg(
-    "lastName", param);
-  if (result) {
-    response.setHeader('content-type', 'application/json');
-    response.end(JSON.stringify(result));
-  } else {
     next(createError(404));
   }
 });
