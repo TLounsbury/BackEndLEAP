@@ -35,12 +35,12 @@ router.get('/team', (request, response, next) => {
 });
 
 // example for using path variable
-router.get('/contact/:lastname', (request, response, next) => {
-  const param = request.params.lastname;
-  console.log('got into contact/:lastname ' + param);
+router.get('/team/:lastName', (request, response, next) => {
+  const param = request.params.lastName;
+  console.log('got into team/:lastName ' + param);
 
   const result = team.query_by_arg(
-    "lastname", param);
+    "lastName", param);
   if (result) {
     response.setHeader('content-type', 'application/json');
     response.end(JSON.stringify(result));

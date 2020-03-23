@@ -11,6 +11,7 @@ exports.list = () => {
 
 exports.query_by_arg = (arg, value) => {
     let json_result = JSON.parse(read_json_file());
+    console.log(json_result);
     // all addresses are stored in a "result" object
     let result = json_result.result;
     console.log("query by arg: " + arg + " " + value);

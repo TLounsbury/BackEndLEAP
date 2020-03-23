@@ -1,17 +1,19 @@
-[
-    {
-        "firstName": "Thomas",
-        "lastName": "Fenyak",
-        "email": "Thomas.Fenyak@fmr.com"
-    },
-    {
-        "firstName": "Nicholas",
-        "lastName": "Quinn",
-        "email": "Nicholas.Quinn@fmr.com"
-    },
-    {
-        "firstName": "Cameron",
-        "lastName": "Fournier",
-        "email": "Cameron.Fournier@fmr.com"
-    }
-]
+{
+    "result": [
+        {
+            "firstName": "Thomas",
+            "lastName": "Fenyak",
+            "email": "Thomas.Fenyak@fmr.com"
+        },
+        {
+            "firstName": "Nicholas",
+            "lastName": "Quinn",
+            "email": "Nicholas.Quinn@fmr.com"
+        },
+        {
+            "firstName": "Cameron",
+            "lastName": "Fournier",
+            "email": "Cameron.Fournier@fmr.com"
+        }
+    ]
+}
